@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects | Kelvin Mwape</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar glass">
+    <div class="nav-container">
+      <a href="index.html" class="logo">KM<span class="neon-text">.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+    </div>
+  </nav>
+
+  <main class="page-container page-transition">
+    <h1 class="page-title">My <span class="neon-text">Projects</span></h1>
+    <p class="page-subtitle">Click any card to view the technical breakdown.</p>
+
+    <div class="projects-grid">
+      <div class="project-card glass" onclick="openModal('modal1')">
+        <i class="fas fa-shield-alt project-icon"></i>
+        <h3>Secure Banking Microservice</h3>
+        <p>Java · Spring Boot · JWT</p>
+      </div>
+      <div class="project-card glass" onclick="openModal('modal2')">
+        <i class="fas fa-satellite project-icon"></i>
+        <h3>Building Age ML Classifier</h3>
+        <p>Python · Scikit-learn · 83.9% Acc</p>
+      </div>
+      <div class="project-card glass" onclick="openModal('modal3')">
+        <i class="fas fa-mobile-alt project-icon"></i>
+        <h3>Android Student System</h3>
+        <p>Java · Node.js · MySQL · Room</p>
+      </div>
+      <div class="project-card glass" onclick="openModal('modal4')">
+        <i class="fas fa-wind project-icon"></i>
+        <h3>Air Quality IoT Network</h3>
+        <p>ESP32 · Firebase · JS</p>
+      </div>
+      <div class="project-card glass" onclick="openModal('modal5')">
+        <i class="fas fa-hospital project-icon"></i>
+        <h3>Hospital Queue System</h3>
+        <p>PHP · MySQL · 30% Efficiency</p>
+      </div>
+      <div class="project-card glass" onclick="openModal('modal6')">
+        <i class="fas fa-user-check project-icon"></i>
+        <h3>Student Attendance App</h3>
+        <p>Java · MySQL · Desktop</p>
+      </div>
+    </div>
+  </main>
+
+  <div id="modal1" class="modal"><div class="modal-content glass"><span class="close-btn" onclick="closeModal('modal1')">&times;</span><h2>Secure Banking Microservice</h2><p>Engineered a resilient backend using Java 17 and Spring Boot. Implemented BCrypt password hashing, JWT authentication, and database transactions to prevent race conditions.</p></div></div>
+  <div id="modal2" class="modal"><div class="modal-content glass"><span class="close-btn" onclick="closeModal('modal2')">&times;</span><h2>Hack4Dev 2026: Building Age ML</h2><p>Developed a spatial-temporal machine learning pipeline to classify building ages from satellite imagery (83.90% accuracy). Evaluated 8 models and used Soft-Voting Ensembles.</p></div></div>
+  <div id="modal3" class="modal"><div class="modal-content glass"><span class="close-btn" onclick="closeModal('modal3')">&times;</span><h2>Android Student Registration</h2><p>Full-stack Android app for 200+ students. Used Java, Node.js, MySQL, and offline-first architecture (Room/WorkManager).</p></div></div>
+  <div id="modal4" class="modal"><div class="modal-content glass"><span class="close-btn" onclick="closeModal('modal4')">&times;</span><h2>Air Quality Monitoring Network</h2><p>IoT system using ESP32, MQ-series sensors, Firebase cloud, and a JavaScript web dashboard for real-time telemetry.</p></div></div>
+  <div id="modal5" class="modal"><div class="modal-content glass"><span class="close-btn" onclick="closeModal('modal5')">&times;</span><h2>Hospital Queue Management</h2><p>Web app (PHP/MySQL) that reduced patient waiting time by 30%. Implemented queue optimization and real-time status updates.</p></div></div>
+  <div id="modal6" class="modal"><div class="modal-content glass"><span class="close-btn" onclick="closeModal('modal6')">&times;</span><h2>Student Attendance System</h2><p>Java/MySQL desktop app for tracking attendance and automated reporting.</p></div></div>
+
+  <footer class="footer glass"><p>© 2025 Kelvin Mwape.</p></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
